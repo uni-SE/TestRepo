@@ -1,0 +1,10 @@
+LÖSEN + VISUALISIEREN
+
+clingo -c horizon=20 ~/Downloads/potassco/asprilo-encodings-develop/abc/encoding-a.lp ~/Downloads/potassco/asprilo-master/generator/scripts/generatedInstances/x10_y10_n100_r3_s3_ps1_pr1_u20_o3_N001.lp --outf=0 -V0 --out-atomf=%s. | head -n1 | ~/Downloads/potassco/asprilo-master/visualizer/scripts/viz
+
+
+SOLUTION CHECKER
+//Muss in dem Verzeichnis sein, wo Instanz und Plan liegen
+clingo ~/Downloads/potassco/asprilo-master/checker/encodings/a/checker.lp ./x10_y10_n100_r3_s3_ps1_pr1_u20_o3_N001.lp plan.lp --out-ifs="\n"|grep err
+
+

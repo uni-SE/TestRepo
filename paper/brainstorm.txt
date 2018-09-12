@@ -1,0 +1,43 @@
+It is really hard to only tune one parameter because the position and count are strongly connected and not really independent of each other.
+
+Variation von Positionen:
+	//keeping rectangular design, no crazy stuff
+	Picking Station
+		-Picking stations in the middle instead of edge
+		-Picking station surrounded by highways
+	storage node
+		-Storage nodes must be surrounded by highway nodes
+		-Storage nodes must be connected to at least 2 highway nodes
+		-Storage nodes compact in rectangles
+		-Storage nodes at the most outer nodes
+
+variation in the whole grid design:
+	
+
+
+Discussion:
+	-Influence of orders and product distribution among shelves
+	-Why and how does it influence time/length
+	-Tradeoff between costs of more picking stations and profit
+	
+//Title is not final yet	
+Influence of Different Warehouse Designs on the Solving Time and Plan Length in Robotic Intra-logistics Domains
+
+Structure
+
+1. Introduction
+2. The Asprilo Framework
+3. Variation in Warehouse Design
+	3.1 Varying the Arrangement of Storage Nodes //I might leave it at just that depending on how deep I go into it
+	3.2 Varying the Position and Number of Picking Stations
+4. Experimental Results
+5. Conclusion
+
+3. Variation in Warehouse Design
+
+
+To get a good comparison between different designs, I will have a consistent amount of orders with the exact same order line every time. The shelves carrying the ordered products will be placed at random, simulating a real world use case where shelves are not bound to certain storage locations. Since this can create meaningful differences in solving time and plan length, the experimental results will consist of averages of several instances with different random shelf locations.
+3.1 Varying the Arrangement of Storage Nodes
+
+
+
